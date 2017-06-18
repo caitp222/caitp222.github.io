@@ -7,7 +7,7 @@ body {
 header#homepage {
   border-bottom:solid black 8px;
   background-image:url(https://raw.githubusercontent.com/caitp222/caitp222.github.io/master/Images/Birds.Jpg);
-  background-position:center;
+  background-position: right;
   position: fixed;
   top: 0px;
   height: 110px;
@@ -15,11 +15,34 @@ header#homepage {
   z-index: 10;
 }
 
+@media screen and (max-width:700px) {
+  header#homepage {
+    background-position: -1000px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  form {
+    padding:0px;
+  }
+  header#homepage {
+    font-size: 80%;
+    height :80px;
+    background-position: -1100px;
+  }
+  #main {
+    margin-top: 80px;
+  }
+  img {
+    width: 300px;
+  }
+}
+
 .header {
   font-family:arial;
 }
 
-section#main {
+#main {
   position: absolute;
   margin-top: 110px;
   z-index; 0;
@@ -35,6 +58,10 @@ form#homepage div {
 
 input {
   font-style: italic;
+}
+
+.button {
+  padding: 7px;
 }
 
 .button:hover {
