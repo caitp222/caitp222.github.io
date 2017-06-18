@@ -1,3 +1,55 @@
 body {
-  background-color: lightblue
+  background-color: white;
+  font-family: helvetica;
+}
+
+
+header#homepage {
+  border-bottom:solid black 8px;
+  background-image:url(https://raw.githubusercontent.com/caitp222/caitp222.github.io/master/Images/Birds.Jpg);
+  background-position:center;
+  position: fixed;
+  top: 0px;
+  height: 110px;
+  width: 100%;
+  z-index: 10;
+}
+
+.header {
+  font-family:arial;
+}
+
+section#main {
+  position: absolute;
+  margin-top: 110px;
+  z-index; 0;
+  overflow-y:scroll;
+}
+
+
+form#homepage div {
+  border: solid black 1px;
+  width: 20%;
+  padding: 5px;
+}
+
+input {
+  font-style: italic;
+}
+
+.button:hover {
+  background-color:lightblue;
+}
+
+a:visited {
+  color:green;
+}
+
+ul {
+  list-style-type:square;
+}
+
+#crater-lake {
+  content-align:center;
+  text-align:center;
 }

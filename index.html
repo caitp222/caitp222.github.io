@@ -7,7 +7,11 @@
   </head>
 
 <body>
-  <h1>My Oregon Roadtrip</h1>
+<header id="homepage">
+  <h1 class="header">My Oregon Roadtrip</h1>
+  <p class="header">by Caitlin Prentke</p>
+</header>
+<section id="main">
   <section>
     <h3>When?</h3>
     <p>August 2016</p>
@@ -26,14 +30,14 @@
   </div>
   <div>
     <p>That's just a taster, you can see more if you fill in the form below!</p>
-      <form action="Crater_Lake.html">
+      <form id="homepage" action="Crater_Lake.html">
         <div>
           <label>Name:</label>
-          <input type="text" name="user name">
+          <input type="text" name="user name" placeholder="Your name">
         </div>
         <div>
           <label>Email:</label>
-          <input type="email" name="customer email">
+          <input type="email" name="customer email" placeholder="Your email">
         </div>
         <div>
           <p>Have you been to Oregon before?</p>
@@ -43,13 +47,14 @@
           </select>
         </div>
         <div>
-          <button type="submit">Submit</button>
+          <button class="button" type="submit">Submit</button>
         </div>
       </form>
   </div>
   <div>
   <p>Here's another example of a <a href="http://www.theseforeignlands.com/" target ="_blank">personal travel website.</a> Looking through the code, I've noticed that all the div tags have long lists of attributes that seem to refer to size, placement, some basic aspects of appearance, and a lot of other things I don't understand!</p>
   </div>
+</section>
 
 </body>
 </html>
