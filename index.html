@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Oregon Roadtrip</title>
+<head>
+  <title>Caitlin Prentke</title>
 
-    <link rel="stylesheet" href="styles.css" type="text/css">
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
 
+</head>
 <body>
-<header id="homepage">
-  <h1 class="header">My Oregon Roadtrip</h1>
-  <p class="header">by Caitlin Prentke</p>
-</header>
-<section id="main">
-  <section>
-    <h3>When?</h3>
-    <p>August 2016</p>
-    <h3>Where?</h3>
-    <ul>
-      <li>Portland</li>
-      <li>Astoria</li>
-      <li>Ecola State Park</li>
-      <li>Cannon Beach</li>
-      <li>Crater Lake</li>
-    </ul>
-  </section>
-  <div>
-    <p>Here's an image I took of Cannon Beach, and there are more to look at <a href=https://www.instagram.com/experiencecannonbeach/ target="_blank">here</a>, if you want.</p>
-    <img src="https://raw.githubusercontent.com/caitp222/caitp222.github.io/master/Images/Cannon_Beach.Jpg" width=400 alt="Cannon Beach" title="Cannon Beach">
+  <div class="container">
+    <div class="row">
+      <div class="col s3 sidebar">
+        <img class="circle" src="Images/L4505RB-R01-023-copy.Jpg" width="120px">
+        <h4>Caitlin Prentke</h4>
+        <p>Full-Stack Web Developer</p>
+      </div>
+      <div class="col s9 main">
+        <div class="row">
+          <h5>About Me</h5>
+
+          <div>
+            <p>I am a full-stack web developer with a background in photo and video editing. In my previous career I worked at companies including NBC News and The New York Times, before being drawn into web development and attending Dev Bootcamp in New York City from May to October 2017. I still love photography - follow me on <a href="https://www.instagram.com/caitlinprentke/" target="blank">Instagram</a> - but web development is so much more rewarding for me right now. I love building full-stack web and mobile applications, although if I had to pick to work in front or back-end, I'd pick back-end!</p>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col s6">
+            <h4>Projects</h4>
+            <ul>
+              <li><h5>SplittR</h5></li>
+                <p>A mobile application that allows users to create groups, scan receipts to track expenses, and then split the total evenly.</p>
+                <p><a href="https://github.com/SplittR/splittr-frontend" target="blank">Link to React Native front-end repository.</a></p>
+                <p><a href="https://github.com/SplittR/splittr-backend" target="blank">Link to Rails back-end repository.</a></p>
+              <li></li>
+              <li><h5>Compare the Weather</h5></li>
+                <p>A simple web application that describes the weather in the user's current location and returns a gif from Giphy based (somewhat) on that description. It also allows the user to search the weather in c.250 major world cities.</p>
+                <p><a href="https://mighty-reef-21258.herokuapp.com/" target="blank">Link to the live site.</a></p>
+                <p><a href="https://github.com/caitp222/weather-app" target="blank">Link to the repository.</a></p>
+              <li></li>
+              <li><h5>Ruby Age-Calculator Gem</h5></li>
+                <p>During an exercise in Phase 1 of Dev Bootcamp, it became apparent that there was no simple way to calculate a user's age in Ruby, so we wrote and published a gem that does just that.</p>
+                <p><a href="https://rubygems.org/gems/age_calc" target="blank">Link to Ruby Gems.</a></p>
+                <p><a href="https://github.com/OG-Hawks/age-calculator-gem" target="blank">Link to the repository.</a></p>
+              <li></li>
+            </ul>
+          </div>
+
+          <div class="col s6">
+            <h4>Algorithms</h4>
+            <p>Below are links to my versions of some common algorithms.</p>
+            <ul>
+              <li><h5><a href="https://repl.it/MRp7/3" target="blank">Bubble Sort</a></h5></li>
+                <p>A bubble sort sorts the elements in an array in pairs, eventually resulting in a sorted array.</p>
+              <li></li>
+              <li><h5><a href="https://repl.it/LYg4/7" target="blank">Product of Integers</a></h5></li>
+                <p>For an array of integers, create an array that is the products of those integers besides the one at that index.</p>
+              <li></li>
+              <li><h5><a href="https://repl.it/LYdn/8" target="blank">Rainwater Collector</a></h5></li>
+                <p>Best explained by visiting the Women Who Code challenge <a href="https://github.com/WomenWhoCodeNYC/Algorithms/blob/master/challenges/rainWaterCollector/rainWaterCollector.md" target="blank">here</a>.</p>
+              <li></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
   </div>
-  <div>
-    <p>That's just a taster, you can see more if you fill in the form below!</p>
-      <form id="homepage" action="Crater_Lake.html">
-        <div>
-          <label>Name:</label>
-          <input type="text" name="user name" placeholder="Your name">
-        </div>
-        <div>
-          <label>Email:</label>
-          <input type="email" name="customer email" placeholder="Your email">
-        </div>
-        <div>
-          <p>Have you been to Oregon before?</p>
-          <select name="select">
-            <option value="value1">Yes</option>
-            <option value="value2">No</option>
-          </select>
-        </div>
-        <div>
-          <button class="button" type="submit">Submit</button>
-        </div>
-      </form>
-  </div>
-  <div>
-  <p>Here's another example of a <a href="http://www.theseforeignlands.com/" target ="_blank">personal travel website.</a> Looking through the code, I've noticed that all the div tags have long lists of attributes that seem to refer to size, placement, some basic aspects of appearance, and a lot of other things I don't understand!</p>
-  </div>
-</section>
 
 </body>
 </html>
